@@ -127,18 +127,13 @@ export default function Signup({ history }) {
                                                 value="submit"
                                                 className="btn-primary btnn form-submit sub-btn sgnUp" />
                                         </div>
-                                        <div>
-                                            <small className="form-text text-muted link-text" >
-                                                Already a User ?
-                                            </small>
-                                            <span className="signuptext" >
-                                                <a href="/#"
-                                                    onClick={
-                                                        (e) => getToSignIn(e)} >
-                                                    Sign - In
-                                                </a>
-                                            </span>
-                                        </div>
+                                        <div className="signin-link-container">
+    <span className="signin-text">Already a user?</span>
+    <button className="signin-btn" onClick={(e) => getToSignIn(e)}>Sign In</button>
+</div>
+
+
+                                            
                                     </form>
                                 </div>
                             </div>

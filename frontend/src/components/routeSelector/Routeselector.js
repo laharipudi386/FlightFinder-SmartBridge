@@ -8,7 +8,7 @@ export default function Routeselector() {
     const [destination, setDestination] = useState('')
     const handleToCity = e => {
         e.preventDefault()
-        setDestination({ destination: e.target.value })
+        setDestination({destination:e.target.value})
         localStorage.setItem("destination", e.target.value)
     }
     const renderBusList = (dataInp) => {
@@ -18,7 +18,7 @@ export default function Routeselector() {
     }
     const handleFromCity = e => {
         e.preventDefault()
-        setStartCity({ startCity: e.target.value })
+        setStartCity({startCity:e.target.value})
         localStorage.setItem("start", e.target.value)
         // console.log(startCity)
     }
@@ -44,8 +44,8 @@ export default function Routeselector() {
             <div className="form-group inline"></div>
             <div className="main-container">
                 <form className="form-inline" onSubmit={e => getRoutes(e)}>
-                    <select name="ad_account_selected" data-style="btn-new" class="selectpicker" onChange={e => { handleFromCity(e) }}>
-                        <option>FROM</option>
+                    <select name="ad_account_selected" data-style="btn-new" className="selectpicker" onChange={e => { handleFromCity(e) }}>
+                        <option value="">FROM</option>
                         <option>Chennai</option>
                         <option>Bangalore</option>
                         <option>Coimbatore</option>
@@ -75,8 +75,8 @@ export default function Routeselector() {
 
 
                     </select>
-                    <select name="ad_account_selected" data-style="btn-new" class="selectpicker" onChange={e => { handleToCity(e) }}>
-                        <option>TO</option>
+                    <select name="ad_account_selected" data-style="btn-new" className="selectpicker" onChange={e => { handleToCity(e) }}>
+                        <option value="">TO</option>
                         <option>Hyderabad</option>
                         <option>Coimbatore</option>
                         <option>Vishakapatnam</option>

@@ -199,21 +199,30 @@ a, a:hover {
 }
 
 .signup-text {
+    display: inline-block;
     padding-bottom: 5px;
-    padding-left: 18%;
+    padding-left: 0;
+    color: #07315B;
+    font-weight: 500;
 }
+
 .signUPtext {
-    color: green;
-    position: relative;
-    left: 50%;
-    top: -27px;
-    padding-right: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    color: #673AB7;
+    font-weight: 600;
     cursor: pointer;
+    transition: 0.3s;
+    position: static;
+    top: auto;
+    left: auto;
+    padding: 0;
 }
 
 .signUPtext:hover {
-    color: rgb(71, 158, 71);
+    color: #4CAF50;
 }
+
 
 .loginInfo{
     margin-left:5px;

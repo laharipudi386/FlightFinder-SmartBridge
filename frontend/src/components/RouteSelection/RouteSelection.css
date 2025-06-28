@@ -1,21 +1,52 @@
-.ic .li a {
-    cursor: pointer;
+/* Glowing brand logo like original */
+.Company-Log {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Brush Script MT', cursive;
+    color: #ffffff !important;
+    text-shadow:
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 30px #00ffff;
 }
 
-.routePicker {
-    padding: 30px 18px;
+/* Style navbar background */
+.navbar {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    padding: 10px 20px;
 }
 
-.dropdown>.dropdown-menu {
-    top: 200%;
-    transition: 0.3s all ease-in-out;
+/* Navigation pills */
+.nav-pills .nav-link {
+    color: #fff !important;
+    background-color: transparent;
+    border-radius: 0;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
 }
 
-.dropdown:hover>.dropdown-menu {
-    display: block;
-    top: 100%;
+.nav-pills .nav-link.active {
+    background-color: #007bff !important;
 }
 
-.dropdown>.dropdown-toggle:active {
-    pointer-events: none;
+.nav-pills .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: cyan !important;
+}
+
+/* Container tab boxes */
+.mn-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+/* Background image style */
+body, html {
+    height: 100%;
+    margin: 0;
+    background: url("/background.jpg") no-repeat center center fixed;
+    background-size: cover;
 }

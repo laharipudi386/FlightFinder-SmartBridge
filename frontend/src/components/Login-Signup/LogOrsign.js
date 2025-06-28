@@ -58,15 +58,20 @@ export default function LogOrsign({ history }) {
                                             <input className="loginInfo" type="password" name="password" required onChange={e => handleChangeEvent(e, 'password')} />
                                             <label>password</label>
                                         </div>
-                                        <div class="myform-button">
-                                            <button type="submit" className="myform-btn">Login</button>
-                                        </div>
-                                        <div>
-                                            <small className="form-text text-muted signup-text">Already a User?
-                                            </small>
-                                            <span className="signUPtext"><a href="/#" onClick={(e) => getToSignUp(e)}>Sign-Up</a></span>
-                                        </div>
-                                    </form>
+                                        <div className="myform-button">
+    <button type="submit" className="myform-btn">Login</button>
+</div>
+
+<div className="signup-link-container">
+    <span className="signup-text">Don't have an account?</span>
+    <span className="signUPtext">
+        <a href="/#" onClick={(e) => getToSignUp(e)}>Sign Up</a>
+    </span>
+</div>
+
+</form> {/* ✅ Closing the form properly */}
+
+
                                 </div>
                             </div>
                         </div>
